@@ -7,8 +7,7 @@
             stylesheets="@styles.css">
     <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
     <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-    <Button text="Button Three" GridPane.rowIndex="0" GridPane.columnIndex="2"
-    style="-fx-background-color: blue ; -fx-text-fill: white"/>
+    <Button text="Button Three" id="button_three" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
     <Button text="Button Four" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
     <Button text="Button Five" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
 
@@ -17,3 +16,9 @@
 
 
 <!--We can change the button's text color by using the textFill property is it extends from Labeled class...but we can do the same using CSS as well-->
+
+
+<!--When css is included within the fxml in the control element(in line) then it takes precedence over the css in the style sheet...similar to overriding  -->
+<!--However, css in line is not recommended-->
+
+<!--id is different than fx:id-->
