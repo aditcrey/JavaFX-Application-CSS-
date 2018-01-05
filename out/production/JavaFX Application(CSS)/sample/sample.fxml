@@ -7,7 +7,8 @@
             stylesheets="@styles.css">
     <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
     <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-    <Button text="Button Three" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+    <Button text="Button Three" GridPane.rowIndex="0" GridPane.columnIndex="2"
+    style="-fx-background-color: blue ; -fx-text-fill: white"/>
     <Button text="Button Four" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
     <Button text="Button Five" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
 
