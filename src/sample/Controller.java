@@ -40,24 +40,36 @@ public class Controller {
 
     @FXML
     public void handleClick(){
-        /*
+
         FileChooser chooser = new FileChooser();
         //we are gonna call the show open dialog method which shows the filechooser in open mode but to do that
         //we need to pass in a parent window for the filechoose...so we need to assign fx:id to our GridPane
 //        chooser.showOpenDialog(null); //in this case you'll be able to interact with the application window even though the open dialog is open //not wanted
-        chooser.showOpenDialog(gridPane.getScene().getWindow());
+//        chooser.showOpenDialog(gridPane.getScene().getWindow());
+
+        chooser.showSaveDialog(gridPane.getScene().getWindow());
 
 
-        */
 
+        /*
         //using DirectoryChooser to be able to select a folder(directory)
         DirectoryChooser chooser = new DirectoryChooser();
+
+
         File file  = chooser.showDialog(gridPane.getScene().getWindow()); //here we need to use showDialog instead of showOpenDialog  //file collects the return value
         if(file!=null){
             System.out.println(file.getPath());
         }else{
             System.out.println("Chooser was cancelled");
         }
+
+*/
+
+
+
+
+
+
 
 
 
