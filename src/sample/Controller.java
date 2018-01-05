@@ -52,8 +52,13 @@ public class Controller {
 
         //using DirectoryChooser to be able to select a folder(directory)
         DirectoryChooser chooser = new DirectoryChooser();
-        chooser.showDialog(gridPane.getScene().getWindow()); //here we need to use showDialog instead of showOpenDialog
-        
+        File file  = chooser.showDialog(gridPane.getScene().getWindow()); //here we need to use showDialog instead of showOpenDialog  //file collects the return value
+        if(file!=null){
+            System.out.println(file.getPath());
+        }else{
+            System.out.println("Chooser was cancelled");
+        }
+
 
 
 
