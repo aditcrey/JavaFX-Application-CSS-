@@ -47,7 +47,12 @@ public class Controller {
 //        chooser.showOpenDialog(null); //in this case you'll be able to interact with the application window even though the open dialog is open //not wanted
 //        chooser.showOpenDialog(gridPane.getScene().getWindow());
 
-        chooser.showSaveDialog(gridPane.getScene().getWindow());
+        File file = chooser.showSaveDialog(gridPane.getScene().getWindow());
+        if(file!=null){
+            System.out.println(file.getPath());
+        }else{
+            System.out.println("Chooser was cancelled");
+        }
 
 
 
