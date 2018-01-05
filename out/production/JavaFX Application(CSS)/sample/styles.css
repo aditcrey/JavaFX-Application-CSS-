@@ -1,0 +1,4 @@
+.button {   //this is control selector...we select the control we wanna style here
+ -fx-background-color: green;
+ -fx-text-fill: white;
+ }
