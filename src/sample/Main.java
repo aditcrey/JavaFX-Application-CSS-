@@ -22,3 +22,8 @@ public class Main extends Application {
         launch(args);
     }
 }
+
+
+/**
+ * JavaFX allows to transform nodes in the scene graph i.e. we can animate them, zoom in on them, etc.
+ */
