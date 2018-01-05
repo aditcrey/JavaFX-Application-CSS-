@@ -22,3 +22,5 @@
 <!--However, css in line is not recommended-->
 
 <!--id is different than fx:id-->
+
+<!--JavaFX CSS documentation: https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html-->

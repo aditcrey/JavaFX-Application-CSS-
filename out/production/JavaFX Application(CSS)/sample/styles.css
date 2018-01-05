@@ -1,7 +1,11 @@
+
+/*
 .button {   //this is class selector...we select the class we wanna style here  //all the controls of that class are styles accordingly
  -fx-background-color: green;
  -fx-text-fill: white;
  }
+
+ */
 
  #button_three{
  -fx-background-color: blue;
