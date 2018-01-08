@@ -1,10 +1,14 @@
 package sample;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.GridPane;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebErrorEvent;
+import javafx.scene.web.WebView;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 
@@ -24,6 +28,9 @@ public class Controller {
 
     @FXML
     private GridPane gridPane;
+
+    @FXML
+    private WebView webView;
 
 
     public void initialize(){
@@ -107,14 +114,25 @@ public class Controller {
 
 //        System.out.println("The link was clicked!");
 
+//
+//        try{
+//            Desktop.getDesktop().browse(new URI("https://www.javafx .com"));
+//        }catch(IOException | URISyntaxException e){
+//            e.printStackTrace();
+//        }
 
-        try{
-            Desktop.getDesktop().browse(new URI("https://www.javafx .com"));
-        }catch(IOException | URISyntaxException e){
-            e.printStackTrace();
-        }
+
+        WebEngine engine = webView.getEngine();
+        engine.load("http://www.google.com");
+
+
+
 
     }
+
+
+
+
 }
 
 
@@ -130,5 +148,7 @@ public class Controller {
  *
  *
  * if we want to choose a folder(directory) instead of a file then we need to use directoryChooser instead of fileChooser
+ *
+ * Interesting doc on webengine: https://docs.oracle.com/javase/8/javafx/api/javafx/scene/web/WebEngine.html
  *
  **/
