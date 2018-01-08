@@ -97,6 +97,13 @@ public class Controller {
 
 
     }
+
+    @FXML
+    public void handleLinkClick(){
+
+        System.out.println("The link was clicked!");
+
+    }
 }
 
 
