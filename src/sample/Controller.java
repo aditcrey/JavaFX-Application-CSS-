@@ -109,11 +109,9 @@ public class Controller {
 
 
         try{
-            Desktop.getDesktop().browse(new URI("http://www.javafx.com  "));
-        }catch(IOException e){
+            Desktop.getDesktop().browse(new URI("https://www.javafx .com"));
+        }catch(IOException | URISyntaxException e){
             e.printStackTrace();
-        }catch (URISyntaxException f){
-            f.printStackTrace();
         }
 
     }
