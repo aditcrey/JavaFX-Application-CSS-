@@ -51,11 +51,13 @@ public class Controller {
         chooser.setTitle("Save Application File");
         chooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Text","*.txt"),
-                new FileChooser.ExtensionFilter("PDF","*.pdf")
+                new FileChooser.ExtensionFilter("PDF","*.pdf"),
+                new FileChooser.ExtensionFilter("Images","*.jgp","*.png"),
+                new FileChooser.ExtensionFilter("All Files","*.*")
         );
 
-        File file = chooser.showSaveDialog(gridPane.getScene().getWindow());
-
+//        File file = chooser.showSaveDialog(gridPane.getScene().getWindow());
+        File file = chooser.showOpenDialog(gridPane.getScene().getWindow());
         if(file!=null){
             System.out.println(file.getPath());
         }else{
