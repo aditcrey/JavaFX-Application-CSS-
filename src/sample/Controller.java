@@ -47,7 +47,15 @@ public class Controller {
 //        chooser.showOpenDialog(null); //in this case you'll be able to interact with the application window even though the open dialog is open //not wanted
 //        chooser.showOpenDialog(gridPane.getScene().getWindow());
 
+
+        chooser.setTitle("Save Application File");
+        chooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Text","*.txt"),
+                new FileChooser.ExtensionFilter("PDF","*.pdf")
+        );
+
         File file = chooser.showSaveDialog(gridPane.getScene().getWindow());
+
         if(file!=null){
             System.out.println(file.getPath());
         }else{
