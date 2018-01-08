@@ -8,7 +8,11 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 
+import java.awt.*;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 
 public class Controller {
@@ -101,7 +105,16 @@ public class Controller {
     @FXML
     public void handleLinkClick(){
 
-        System.out.println("The link was clicked!");
+//        System.out.println("The link was clicked!");
+
+
+        try{
+            Desktop.getDesktop().browse(new URI("http://www.javafx.com  "));
+        }catch(IOException e){
+            e.printStackTrace();
+        }catch (URISyntaxException f){
+            f.printStackTrace();
+        }
 
     }
 }
